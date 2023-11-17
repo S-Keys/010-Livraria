@@ -1,4 +1,4 @@
-# ALURABOOK (Infelizmente para esse projeto não vai dar para alterar o projeto)
+# ALURABOOK
   
 Página criada durante aula "HTML e CSS: praticando HTML/CSS" da escola Alura.
  
@@ -10,7 +10,7 @@ Página criada durante aula "HTML e CSS: praticando HTML/CSS" da escola Alura.
  
 ## Visão Geral
  
-O objetivo da aula foi criar uma página responsiva baseada em mobile first tendo como base HTML e CSS e layout definido no Figma. 
+Infelizmente, para este projeto, não farei alterações no nome, logo, cores, entre outros, pois preciso avançar nos estudos e não disponho de tempo para isso no momento. O objetivo da aula foi criar uma página responsiva, baseada em mobile first, utilizando HTML e CSS, com o layout definido no Figma. 
  
 ## Pré-Requisitos
  
