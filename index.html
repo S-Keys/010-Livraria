@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -48,5 +49,158 @@
         <p class="banner__texto">Encontre em nossa estante o que precisa para o seu desenvolvimento</p>
         <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+    <section Class="carrossel">
+        <h2 class="carrossel__titulo">novos lançamentos</h2>
+            
+        <div class="swiper">
+            
+            <div class="swiper-pagination"></div>
+            
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/ApacheKafka.svg" alt="Livro sobre Apache... como descrito na capa"></div>
+                <div class="swiper-slide"><img src="./img/Lideranca.svg" alt="Livro sobre liderança... lider de vendas"></div>
+                <div class="swiper-slide"><img src="./img/Javascript.svg" alt="Livro sobre javascript... É script"></div>
+                <div class="swiper-slide"><img src="./img/Guia Front-end.svg" alt="Livro guia front-end... é claro"></div>
+                <div class="swiper-slide"><img src="./img/Portugol.svg" alt="Livro sobre portugol... sem dúvida"></div>
+                <div class="swiper-slide"><img src="./img/Acessibilidade.svg" alt="Livro sobre acessibilidade... garanto!"></div>
+            </div>
+                   
+            <!-- Setas de navegação que não vamos usar no mobile, mas jpá ocultadas no CSS -->
+            <!-- <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-button-next"></div> -->
+        
+            <!-- scrollbar... iden acima -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+
+        <div class="card">
+            <!--1a linha-->
+            <div class="card__descricao">
+                <!--1a coluna-->
+                <div class="descricao">
+                    <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+                <!--2a coluna-->
+                <img src="./img/Angular.svg" class="descricao__imagem">
+            </div>
+            
+            <!--2a linha-->
+            <div class="card__botoes">
+                <!--1a coluna-->
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="./img/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botoes__item"><img src="./img/Compras.svg" alt="Adicionar ao carrinho de compras"></li>
+                </ul>
+                <!--2a coluna-->
+                <a href="#" class="botoes__ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+    <section Class="carrossel">
+        <h2 class="carrossel__titulo">mais vendidos</h2>
+            
+        <div class="swiper">
+            
+            <div class="swiper-pagination"></div>
+            
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/Guia Front-end.svg" alt="Compraria esse primeiro"></div>
+                <div class="swiper-slide"><img src="./img/Javascript.svg" alt="Depois esse"></div>
+                <div class="swiper-slide"><img src="./img/Portugol.svg" alt="E mais esse"></div>
+                <div class="swiper-slide"><img src="./img/ApacheKafka.svg" alt="Não compro, mas tem quem goste"></div>
+                <div class="swiper-slide"><img src="./img/Lideranca.svg" alt="Segue o líder"></div>
+                <div class="swiper-slide"><img src="./img/Acessibilidade.svg" alt="Super importante"></div>
+            </div>
+                   
+            <!-- Setas de navegação que não vamos usar no mobile, mas jpá ocultadas no CSS -->
+            <!-- <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-button-next"></div> -->
+        
+            <!-- scrollbar... iden acima -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+
+        <div class="card">
+            <!--1a linha-->
+            <div class="card__descricao">
+                <!--1a coluna-->
+                <div class="descricao">
+                    <img src="./img/Estrelinhas.svg" class="descricao__imagem">
+                    <h3 class="descricao__titulo">Autora do Mês</h3>
+                    <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                    <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-end.</p>
+                </div>
+                <!--2a coluna-->
+                <img src="./img/Escritora.svg" class="descricao__imagem">
+            </div>
+            
+            <!--2a linha-->
+            <div class="card__botoes">
+                <!--1a coluna-->
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="./img/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botoes__item"><img src="./img/Compras.svg" alt="Adicionar ao carrinho de compras"></li>
+                </ul>
+                <!--2a coluna-->
+                <a href="#" class="botoes__ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+    <section class="topicos">
+        <h2 class="topicos_titulo">tópicos visitados rescentemente</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Android</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Marketing Digital</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Agile</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Startups</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">HTML & CSS</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Python</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">OO</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Java</a>
+            </li>
+        </ul>
+    </section>
+    
+    <section class="contato">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <p class="contato__texto">Atulizações de e-books, novos livros, promoções e outros.</p>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <hr/>
+
+    <footer class="rodape">
+        <h2 class="rodape__tirulo">Essa página não é patrocinada pelo Grupo Alura... mas poderia ;)</h2>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 5,
+            slidesPerView: 2,
+            pagination:{
+                el: '.swiper-pagination',
+                type:'bullets'
+            },
+        });
+    </script>
 </body>
 </html>
