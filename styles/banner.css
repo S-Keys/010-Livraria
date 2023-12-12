@@ -34,6 +34,12 @@
     background-position: 1em;
 }
 
+.banner__titulo__bizu{
+    color: var(--laranja);
+    margin-bottom: 1em;
+    font-size: 18px;
+}
+
 @media screen and (min-width: 1024px) {
     .banner__titulo {
         font-size: 36px;
@@ -47,4 +53,30 @@
         background-position: 6em;
     }
 
+    .banner__titulo__bizu{
+        color: var(--laranja);
+        margin-bottom: 1em;
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    .banner{
+        padding: 5em 0;
+    }
+    
+    .banner__pesquisa{
+        width: 35%;
+    }
+
+    .banner__pesquisa::placeholder{
+        background-position: 10em;
+    }
+
+    .banner__titulo__bizu{
+        color: var(--laranja);
+        margin-bottom: 1em;
+        font-size: 33px;
+    }
 }

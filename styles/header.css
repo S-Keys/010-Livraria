@@ -7,6 +7,14 @@
     display: inline-block;
 }
 
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer {
+    background-image: url("../img/MenuAberto.svg");
+}
+
+.container__botao:checked ~ .container__rotulo{
+    background: var(--azul-degrade);
+}
+
 .cabecalho{
     background-color: var(--branco);
     display: flex;
@@ -55,15 +63,7 @@
     text-transform: uppercase;
 }
 
-.container__botao {
-    display: none;
-}
-
-.container__titulo {
-    display: none;
-}
-
-.opcoes {
+.container__botao, .container__titulo, .opcoes, .container__texto{
     display: none;
 }
 
@@ -111,5 +111,41 @@
     .opcao__botao {
         display: none;
     }
+
+    .opcao__botao:checked ~ .opcoes__rotulo > .opcoes__item{
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .opcoes__item{
+        padding: 1.5em 1.5em;
+    }
+
+    .lista__menu__item:hover{
+        background: var(--azul-degrade);
+    }
+
+    .lista__menu__item:hover>.lista__menu__link{
+        -webkit-text-fill-color: var(--branco);
+    }
 }
 
+@media screen and (min-width: 1728px) {
+    .container__link{
+        display: flex;
+        align-items: center;
+        color: var(--preto);
+    }
+
+    .cabecalho{
+        padding: 0 2em;
+    }
+
+    .opcoes{
+        margin-right: auto;
+    }
+
+    .container__texto{
+        display: block;
+    }
+}
