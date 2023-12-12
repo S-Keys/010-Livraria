@@ -96,9 +96,9 @@
                 <div class="swiper-slide"><img src="./img/Acessibilidade.svg" alt="Livro sobre acessibilidade... garanto!"></div>
             </div>
                    
-            <!-- Setas de navegação que não vamos usar no mobile, mas jpá ocultadas no CSS -->
-            <!-- <div class="swiper-button-prev"></div> -->
-            <!-- <div class="swiper-button-next"></div> -->
+            <!-- Setas de navegação, mas jpá ocultadas no CSS para Bobile-->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         
             <!-- scrollbar... iden acima -->
             <!-- <div class="swiper-scrollbar"></div> -->
@@ -145,9 +145,9 @@
                 <div class="swiper-slide"><img src="./img/Acessibilidade.svg" alt="Super importante"></div>
             </div>
                    
-            <!-- Setas de navegação que não vamos usar no mobile, mas jpá ocultadas no CSS -->
-            <!-- <div class="swiper-button-prev"></div> -->
-            <!-- <div class="swiper-button-next"></div> -->
+            <!-- Setas de navegação, mas jpá ocultadas no CSS para mobile-->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         
             <!-- scrollbar... iden acima -->
             <!-- <div class="swiper-scrollbar"></div> -->
@@ -210,15 +210,90 @@
     </section>
     
     <section class="contato">
-        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-        <p class="contato__texto">Atulizações de e-books, novos livros, promoções e outros.</p>
+        <div class="contato__descricao">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atulizações de e-books, novos livros, promoções e outros.</p>
+        </div>
         <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
     </section>
 
     <hr/>
 
     <footer class="rodape">
-        <h2 class="rodape__tirulo">Essa página não é patrocinada pelo Grupo Alura... mas poderia ;)</h2>
+        <h2 class="rodape__titulo">Essa página não é patrocinada pelo Grupo Alura... mas poderia ;)</h2>
+         <ul class="lista__rodape">
+            <li class="lista__rodape__titulo">Educação</li>
+            <li class="lista__rodape__item">
+                <img src="./img/CasaDoCodigo.svg" alt="logo Casa do Código">
+                <a href="#" class="lista__rodape__link">Casa do Código</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./img/Caelum.svg" alt="logo Caelum">
+                <a href="#" class="lista__rodape__link">Caelum</a>
+            </li>
+        </ul>
+        <ul class="lista__rodape">
+            <li class="lista__rodape__titulo">Educação Online</li>
+            <li class="lista__rodape__item">
+                <img src="./img/Alura.svg" alt="logo Alura">
+                <a href="#" class="lista__rodape__link">Alura</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./img/AluraEmpresas.svg" alt="logo Alura Empresas">
+                <a href="#" class="lista__rodape__link">Alura para Empresas</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./img/AluraLATAM.svg" alt="logo Alura LATAM">
+                <a href="#" class="lista__rodape__link">Alura LATAM</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./img/AluraStart.svg" alt="logo Alura Start">
+                <a href="#" class="lista__rodape__link">Alura Start</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./img/MusicDot.svg" alt="logo Music Dot">
+                <a href="#" class="lista__rodape__link">Music Dot</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./img/AluraLingua.svg" alt="logo Alura Lingua">
+                <a href="#" class="lista__rodape__link">Alura Língua</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./img/PM3.svg" alt="logo PM3">
+                <a href="#" class="lista__rodape__link">PM3</a>
+            </li>
+        </ul>
+        <ul class="lista__rodape">
+            <li class="lista__rodape__titulo">Comunidade</li>
+            <li class="lista__rodape__item">
+                <img src="./img/HipstersTech.svg" alt="logo Hipsters Tech">
+                <a href="#" class="lista__rodape__link">Hipsters ponto tech</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./img/ScubaDev.svg" alt="logo Scuba Dev">
+                <a href="#" class="lista__rodape__link">Scuba Dev</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./img/LayersTech.svg" alt="logo Layers Tech">
+                <a href="#" class="lista__rodape__link">Layers ponto tech</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./img/LikeABoss.svg" alt="logo Like A Boss">
+                <a href="#" class="lista__rodape__link">Like A Boss</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./img/CarreiraSemFronteira.svg" alt="logo Carreira Sem Fronteira">
+                <a href="#" class="lista__rodape__link">Carreira Sem Fronteira</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./img/HipstersJobs.svg" alt="logo Hipsters Jobs">
+                <a href="#" class="lista__rodape__link">Hipsters Jobs</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./img/GUJ.svg" alt="logo GUJ">
+                <a href="#" class="lista__rodape__link">GUJ</a>
+            </li>
+        </ul>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -226,7 +301,7 @@
         const swiper = new Swiper('.swiper', {
             speed: 400,
             spaceBetween: 5,
-            slidesPerView: 2,
+            slidesPerView: 3,
             pagination:{
                 el: '.swiper-pagination',
                 type:'bullets'
